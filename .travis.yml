@@ -1,0 +1,18 @@
+language: haskell
+
+ghc:
+  - "8.6.5"
+
+cache:
+    directories:
+        - $HOME/.ghc
+        - $HOME/.cabal
+        - $HOME/.stack
+        - .stack-work
+
+install:
+  - stack install hakyll
+
+script:
+  - stack build
+  - stack exec site build
