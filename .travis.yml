@@ -15,4 +15,3 @@ install:
 
 script:
   - cabal build
-  - cabal new-exec site build
