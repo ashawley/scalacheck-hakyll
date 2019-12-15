@@ -11,8 +11,8 @@ cache:
         - .stack-work
 
 install:
-  - stack install hakyll
+  - cabal install hakyll
 
 script:
-  - stack build
-  - stack exec site build
+  - cabal build
+  - cabal new-exec site build
