@@ -1,141 +1,131 @@
-html {
-  font-size: 62.5%;
+@font-face {
+    font-family:lato;
+    font-style:normal;
+    font-weight:400;
+    src:local('Lato'), url(../fonts/lato-v6-v0SdcGFAl2aezM9Vq_aFTQ.ttf) format('truetype')
 }
-
+@font-face {
+    font-family:inconsolata;
+    font-style:normal;
+    font-weight:400;
+    src:local('Inconsolata'), url(../fonts/inconsolata-v6-BjAYBlHtW3CJxDcjzrnZCJ0EAVxt0G0biEntp43Qt6E.ttf) format('truetype')
+}
 body {
-  font-size: 1.6rem;
-  color: #000;
+    padding-top:0;
+    padding-bottom:40px;
+    margin:0;
+    font-family:lato,sans-serif
 }
-
-header {
-  border-bottom: 0.2rem solid #000;
+img {
+    border:0
 }
-
-nav {
-  text-align: right;
+.container {
+    margin:0 auto;
+    width:750px
 }
-
-nav a {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: black;
-  text-decoration: none;
-  text-transform: uppercase;
+a {
+    text-decoration:none;
+    color:#00c
 }
-
-footer {
-  margin-top: 3rem;
-  padding: 1.2rem 0;
-  border-top: 0.2rem solid #000;
-  font-size: 1.2rem;
-  color: #555;
+a:hover {
+    text-decoration:underline;
+    color:#00c
 }
-
-h1 {
-  font-size: 2.4rem;
+.nav ul {
+    margin:0;
+    padding:0;
+    list-style:none
 }
-
-h2 {
-  font-size: 2rem;
+.nav li {margin-right:15px;padding:0;display:inline}
+.nav {
+    float:right
 }
-
-article .header {
-  font-size: 1.4rem;
-  font-style: italic;
-  color: #555;
+.nav a {
+    font-size:18px;
+    line-height:61px
 }
-
-.logo a {
-  font-weight: bold;
-  color: #000;
-  text-decoration: none;
+.header .logo {
+    float:left
 }
-
-@media (max-width: 319px) {
-  body {
-    width: 90%;
-    margin: 0;
-    padding: 0 5%;
-  }
-  header {
-    margin: 4.2rem 0;
-  }
-  nav {
-    margin: 0 auto 3rem;
-    text-align: center;
-  }
-  footer {
-    text-align: center;
-  }
-  .logo {
-    text-align: center;
-    margin: 1rem auto 3rem;
-  }
-  .logo a {
-    font-size: 2.4rem;
-  }
-  nav a {
-    display: block;
-    line-height: 1.6;
-  }
+.header .logo img {
+    margin-right:25px
 }
-
-@media (min-width: 320px) {
-  body {
-    width: 90%;
-    margin: 0;
-    padding: 0 5%;
-  }
-  header {
-    margin: 4.2rem 0;
-  }
-  nav {
-    margin: 0 auto 3rem;
-    text-align: center;
-  }
-  footer {
-    text-align: center;
-  }
-  .logo {
-    text-align: center;
-    margin: 1rem auto 3rem;
-  }
-  .logo a {
-    font-size: 2.4rem;
-  }
-  nav a {
-    display: inline;
-    margin: 0 0.6rem;
-  }
+.header {
+    padding:25px;
+    box-shadow:0 0 6px #999;
+    height:61px;
+    background-color:#ffffa5;
+    margin-bottom:2em
 }
-
-@media (min-width: 640px) {
-  body {
-    width: 60rem;
-    margin: 0 auto;
-    padding: 0;
-  }
-  header {
-    margin: 0 0 3rem;
-    padding: 1.2rem 0;
-  }
-  nav {
-    margin: 0;
-    text-align: right;
-  }
-  nav a {
-    margin: 0 0 0 1.2rem;
-    display: inline;
-  }
-  footer {
-    text-align: right;
-  }
-  .logo {
-    margin: 0;
-    text-align: left;
-  }
-  .logo a {
-    float: left;
-    font-size: 1.8rem;
-  }
+.footer {
+    font-size:16px;
+    padding-left:0;
+    padding-right:0;
+    padding-top:20px;
+    padding-bottom:20px;
+    border-top:1px solid #aaa;
+    margin-bottom:0;
+    margin-top:3em;
+    clear:both
+}
+.footer p {
+    color:#aaa;
+    line-height:30px;
+    margin:0;
+    padding:0
+}
+.footer .logo {
+    float:left;
+    width:33%;
+    text-align:center
+}
+.footer .left {
+    float:left;
+    text-align:left;
+    width:33%
+}
+.footer .right {
+    float:right;
+    text-align:right;
+    width:33%
+}
+.main {
+    clear:both;
+    font-size:16px;
+    font-weight:400
+}
+.main p {
+    margin-top:0;
+    margin-bottom:.5em
+}
+.main h1,h2 {
+    font-weight:700
+}
+.main h3,h4 {
+    font-weight:400
+}
+.main h1,h2,h3,h4 {
+    margin-top:1.3em;
+    margin-bottom:.3em
+}
+pre,code,table {
+    font-family:inconsolata,monospace;
+    font-size:14px;
+    margin-top:1.5em;
+    margin-bottom:1.5em
+}
+table {
+    border-collapse:collapse
+}
+pre,td {
+    background-color:#eee;
+    padding:.8em;
+    border:1px solid #ccc;
+    border-spacing:0;
+    border-collapse:collapse
+}
+.imgleft img {
+    float:left;
+    margin-right:1em;
+    margin-bottom:2em
 }

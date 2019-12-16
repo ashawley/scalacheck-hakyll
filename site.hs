@@ -7,7 +7,11 @@ import           Hakyll
 --------------------------------------------------------------------------------
 main :: IO ()
 main = hakyll $ do
-    match "images/*" $ do
+    match "img/*" $ do
+        route   idRoute
+        compile copyFileCompiler
+
+    match "fonts/*" $ do
         route   idRoute
         compile copyFileCompiler
 
@@ -15,45 +19,25 @@ main = hakyll $ do
         route   idRoute
         compile compressCssCompiler
 
-    match (fromList ["about.rst", "contact.markdown"]) $ do
+    match (fromList ["download.markdown", "documentation.markdown"]) $ do
         route   $ setExtension "html"
         compile $ pandocCompiler
-            >>= loadAndApplyTemplate "templates/default.html" defaultContext
+            >>= loadAndApplyTemplate "templates/default.html" siteCtx
             >>= relativizeUrls
 
-    match "posts/*" $ do
+    match "download/*.markdown" $ do
         route $ setExtension "html"
         compile $ pandocCompiler
-            >>= loadAndApplyTemplate "templates/post.html"    postCtx
-            >>= loadAndApplyTemplate "templates/default.html" postCtx
+            >>= loadAndApplyTemplate "templates/download.html" downloadCtx
             >>= relativizeUrls
 
-    create ["archive.html"] $ do
-        route idRoute
+    match "index.markdown" $ do
+        route   $ setExtension "html"
         compile $ do
-            posts <- recentFirst =<< loadAll "posts/*"
-            let archiveCtx =
-                    listField "posts" postCtx (return posts) `mappend`
-                    constField "title" "Archives"            `mappend`
-                    defaultContext
-
-            makeItem ""
-                >>= loadAndApplyTemplate "templates/archive.html" archiveCtx
-                >>= loadAndApplyTemplate "templates/default.html" archiveCtx
-                >>= relativizeUrls
-
-
-    match "index.html" $ do
-        route idRoute
-        compile $ do
-            posts <- recentFirst =<< loadAll "posts/*"
             let indexCtx =
-                    listField "posts" postCtx (return posts) `mappend`
-                    constField "title" "Home"                `mappend`
-                    defaultContext
-
-            getResourceBody
-                >>= applyAsTemplate indexCtx
+                    dateField "date" "%B %e, %Y" `mappend`
+                    siteCtx
+            pandocCompiler
                 >>= loadAndApplyTemplate "templates/default.html" indexCtx
                 >>= relativizeUrls
 
@@ -61,7 +45,12 @@ main = hakyll $ do
 
 
 --------------------------------------------------------------------------------
-postCtx :: Context String
-postCtx =
-    dateField "date" "%B %e, %Y" `mappend`
+siteCtx :: Context String
+siteCtx =
+    dateField "year" "%Y" `mappend`
     defaultContext
+downloadCtx :: Context String
+downloadCtx =
+    constField "currentVer" "1.14.0" `mappend`
+    dateField "date" "%B %e, %Y" `mappend`
+    siteCtx
