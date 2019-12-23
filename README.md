@@ -1,6 +1,8 @@
 ScalaCheck.org site with Hakyll
 ===============================
 
+[![Build Status](https://travis-ci.org/ashawley/scalacheck-hakyll.svg?branch=develop)](https://travis-ci.org/ashawley/scalacheck-hakyll)
+
 Install GHC and Cabal.
 
 - https://www.haskell.org/downloads/
