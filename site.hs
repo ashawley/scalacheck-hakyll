@@ -41,6 +41,15 @@ main = hakyll $ do
                 >>= loadAndApplyTemplate "templates/default.html" indexCtx
                 >>= relativizeUrls
 
+    match "404.markdown" $ do
+        route   $ setExtension "html"
+        compile $ do
+            let indexCtx =
+                    dateField "date" "%B %e, %Y" `mappend`
+                    siteCtx
+            pandocCompiler
+                >>= loadAndApplyTemplate "templates/default.html" indexCtx
+
     match "templates/*" $ compile templateBodyCompiler
 
 

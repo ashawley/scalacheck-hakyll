@@ -33,3 +33,34 @@ And then you need to rebuild the entire site:
 More information on Hakyll:
 
 - https://jaspervdj.be/hakyll/
+
+Create a project in Firebase.
+
+- https://console.firebase.google.com
+
+Install the Firebase CLI.
+
+    $ npm install -g firebase-tools
+
+- https://firebase.google.com/docs/cli
+
+Authenticate with Firebase.
+
+    $ firebase login
+
+Initialize your project.
+
+    $ firebase init
+
+- Choose "hosting"
+- Choose "use an existing project"
+- Set `_site` as the "public directory"
+- Answer "no" to "Configure as single-page app"
+
+Preview the site at http://localhost:5000 in a browser:
+
+    $ firebase serve
+
+Upload the site.
+
+    $ firebase deploy
