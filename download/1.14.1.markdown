@@ -1,0 +1,25 @@
+---
+title: ScalaCheck 1.14.1
+date: Wed, 18 Sep 2019 02:39:16 UTC
+currentver: 1.14.1
+scalaVersions:
+  - "2.13"
+  - "2.12"
+  - "2.11"
+  - "2.10"
+---
+## sbt
+
+```scala
+libraryDependencies += "org.scalacheck" %% "scalacheck" % "1.14.1" % "test"
+```
+
+## Other resources
+
+- [ScalaCheck 1.14.1 release notes](https://github.com/rickynils/scalacheck/tree/1.14.1/RELEASE.markdown)
+- [All ScalaCheck releases](../releases.html)
+
+
+## License
+
+ScalaCheck is released under the [3-clause BSD license](https://github.com/rickynils/scalacheck/tree/1.14.1/LICENSE)
