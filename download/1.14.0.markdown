@@ -16,7 +16,7 @@ libraryDependencies += "org.scalacheck" %% "scalacheck" % "1.14.0" % "test"
 
 ## Other resources
 
-- [ScalaCheck 1.14.0 release notes](https://github.com/rickynils/scalacheck/tree/1.14.0/RELEASE)
+- [ScalaCheck 1.14.0 release notes](https://github.com/rickynils/scalacheck/tree/1.14.0/RELEASE.markdown)
 - [All ScalaCheck releases](../releases.html)
 
 
