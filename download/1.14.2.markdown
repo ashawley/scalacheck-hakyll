@@ -1,6 +1,6 @@
 ---
 title: ScalaCheck 1.14.2
-date: Wed, 25 Sep 2019 16:09:11 UTC
+published: Wed, 25 Sep 2019 16:09:11 UTC
 currentver: 1.14.2
 scalaVersions:
   - "2.13"
