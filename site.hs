@@ -2,6 +2,9 @@
 {-# LANGUAGE OverloadedStrings #-}
 import           Data.Monoid (mappend)
 import           Data.Maybe  (fromMaybe)
+import           Data.Time (formatTime)
+import           Data.Time (defaultTimeLocale)
+import           Data.Time (getZonedTime)
 import           Hakyll
 
 
@@ -88,6 +91,6 @@ main = hakyll $ do
 
 --------------------------------------------------------------------------------
 siteCtx :: Context String
-siteCtx =
-    dateField "year" "%Y" `mappend`
-    defaultContext
+siteCtx = 
+    defaultContext <> (field "year" $ \i ->
+        unsafeCompiler $ formatTime defaultTimeLocale "%Y" <$> getZonedTime)
