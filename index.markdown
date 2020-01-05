@@ -4,22 +4,22 @@ title: Home
 
 # ScalaCheck: Property-based testing for Scala
 
-ScalaCheck is a library written in <a href="https://www.scala-lang.org/">Scala</a> and used for automated property-based testing of Scala or Java programs. ScalaCheck was originally inspired by the Haskell library <a href="https://hackage.haskell.org/package/QuickCheck">QuickCheck</a>, but has also ventured into its own.
+ScalaCheck is a library written in [Scala](https://www.scala-lang.org/) and used for automated property-based testing of Scala or Java programs. ScalaCheck was originally inspired by the Haskell library [QuickCheck](https://hackage.haskell.org/package/QuickCheck), but has also ventured into its own.
 
-ScalaCheck has no external dependencies other than the Scala runtime, and <a href="download.html#sbt">works</a> great with <a href="http://www.scala-sbt.org/">sbt</a>, the Scala build tool. It is also fully integrated in the test frameworks <a href="http://www.scalatest.org/">ScalaTest</a>, <a href="https://etorreborre.github.io/specs2/">specs2</a> and <a href="https://github.com/47deg/LambdaTest">LambdaTest</a>. You can also use ScalaCheck completely standalone, with its built-in test runner.
+ScalaCheck has no external dependencies other than the Scala runtime, and [works](download.html#sbt) great with [sbt](http://www.scala-sbt.org/), the Scala build tool. It is also fully integrated in the test frameworks [ScalaTest](http://www.scalatest.org/), [specs2](https://etorreborre.github.io/specs2/) and [LambdaTest](https://github.com/47deg/LambdaTest). You can also use ScalaCheck completely standalone, with its built-in test runner.
 
-ScalaCheck is used by several prominent Scala projects, for example the <a href="https://www.scala-lang.org/">Scala compiler</a> and the <a href="http://akka.io/">Akka</a> concurrency framework.
+ScalaCheck is used by several prominent Scala projects, for example the [Scala compiler](https://www.scala-lang.org/) and the [Akka](http://akka.io/) concurrency framework.
 
 ## News
 
-- 2019-09-18: ScalaCheck 1.14.1 released! This is the first release since the ScalaCheck repository was moved to the <a href="https://typelevel.org/">Typelevel</a> organisation. See the <a href="https://github.com/rickynils/scalacheck/releases/tag/1.14.1">release notes</a>.</li>
-- 2018-04-22: <a href="download/1.14.0.html">ScalaCheck 1.14.0</a>! This release introduces support for deterministic testing. See <a href="https://github.com/rickynils/scalacheck/tree/1.14.0/RELEASE.markdown">release notes</a> and <a href="https://github.com/rickynils/scalacheck/tree/1.14.0/CHANGELOG.markdown">change log</a>.</li>
-- 2016-11-01: <a href="download/1.13.4.html">ScalaCheck 1.13.4</a> and <a href="download/1.12.6.html">ScalaCheck 1.12.6</a> released! These releases fix a <a href="https://github.com/rickynils/scalacheck/issues/290">deadlock problem</a> with Scala 2.12.0. Also, as a problem was discovered with the previously released ScalaCheck 1.12.5 build, it is recommended that you upgrade to 1.12.6 or 1.13.4 even if you’re not using Scala 2.12.</li>
-- 2016-10-19: <a href="download/1.13.3.html">ScalaCheck 1.13.3</a> released! See <a href="https://github.com/rickynils/scalacheck/tree/1.13.3/RELEASE">release notes</a>.</li>
-- 2016-07-11: <a href="download/1.13.2.html">ScalaCheck 1.13.2</a> released! See <a href="https://github.com/rickynils/scalacheck/tree/1.13.2/RELEASE">release notes</a>.</li>
-- 2016-04-14: <a href="download/1.13.1.html">ScalaCheck 1.13.1</a> released! See <a href="https://github.com/rickynils/scalacheck/tree/1.13.1/RELEASE">release notes</a>.</li>
-- 2016-02-03: <a href="download/1.13.0.html">ScalaCheck 1.13.0</a> released! See <a href="https://github.com/rickynils/scalacheck/tree/1.13.0/RELEASE">release notes</a>.</li>
-- 2015-09-10: Snapshot builds are no longer published on this site. Instead <a href="https://travis-ci.org/rickynils/scalacheck">Travis</a> automatically publishes all successful builds of the master branch. See <a href="download.html#snapshot">documentation</a> for more information.</li>
+- 2019-09-18: ScalaCheck 1.14.1 released! This is the first release since the ScalaCheck repository was moved to the [Typelevel](https://typelevel.org/) organisation. See the [release notes](https://github.com/rickynils/scalacheck/releases/tag/1.14.1).
+- 2018-04-22: [ScalaCheck 1.14.0](download/1.14.0.html)! This release introduces support for deterministic testing. See [release notes](https://github.com/rickynils/scalacheck/tree/1.14.0/RELEASE.markdown) and [change log](https://github.com/rickynils/scalacheck/tree/1.14.0/CHANGELOG.markdown).
+- 2016-11-01: [ScalaCheck 1.13.4](download/1.13.4.html) and [ScalaCheck 1.12.6](download/1.12.6.html) released! These releases fix a [deadlock problem](https://github.com/rickynils/scalacheck/issues/290) with Scala 2.12.0. Also, as a problem was discovered with the previously released ScalaCheck 1.12.5 build, it is recommended that you upgrade to 1.12.6 or 1.13.4 even if you’re not using Scala 2.12.
+- 2016-10-19: [ScalaCheck 1.13.3](download/1.13.3.html) released! See [release notes](https://github.com/rickynils/scalacheck/tree/1.13.3/RELEASE).
+- 2016-07-11: [ScalaCheck 1.13.2](download/1.13.2.html) released! See [release notes](https://github.com/rickynils/scalacheck/tree/1.13.2/RELEASE).
+- 2016-04-14: [ScalaCheck 1.13.1](download/1.13.1.html) released! See [release notes](https://github.com/rickynils/scalacheck/tree/1.13.1/RELEASE).
+- 2016-02-03: [ScalaCheck 1.13.0](download/1.13.0.html) released! See [release notes](https://github.com/rickynils/scalacheck/tree/1.13.0/RELEASE).
+- 2015-09-10: Snapshot builds are no longer published on this site. Instead [Travis](https://travis-ci.org/rickynils/scalacheck) automatically publishes all successful builds of the master branch. See [documentation](download.html#snapshot) for more information.
 
 ## Quick start
 
@@ -46,7 +46,7 @@ object StringSpecification extends Properties("String") {
 }
 ```
 
-If you use <a href="http://www.scala-sbt.org/">sbt</a> add the following dependency to your build file:
+If you use [sbt](http://www.scala-sbt.org/) add the following dependency to your build file:
 
 ```scala
 libraryDependencies += "org.scalacheck" %% "scalacheck" % "1.14.1" % "test"
