@@ -33,7 +33,7 @@ main = hakyll $ do
         route $ setExtension "html"
         compile $ do
             let releaseCtx =
-                    constField "foo" "bar" `mappend`
+                    dateField "date" "%B %e, %Y" `mappend`
                     siteCtx
                 downloadCtx =
                     -- This defines a field "scalaVersions" in the
@@ -58,7 +58,7 @@ main = hakyll $ do
         route   $ setExtension "html"
         compile $ do
             let indexCtx =
-                    dateField "date" "%B %e, %Y" `mappend`
+                    constField "foo" "bar" `mappend`
                     siteCtx
             pandocCompiler
                 >>= loadAndApplyTemplate "templates/default.html" indexCtx
@@ -67,11 +67,11 @@ main = hakyll $ do
     match "404.markdown" $ do
         route   $ setExtension "html"
         compile $ do
-            let indexCtx =
-                    dateField "date" "%B %e, %Y" `mappend`
+            let fourOhFourCtx =
+                    constField "foo" "bar" `mappend`
                     siteCtx
             pandocCompiler
-                >>= loadAndApplyTemplate "templates/default.html" indexCtx
+                >>= loadAndApplyTemplate "templates/default.html" fourOhFourCtx
 
     create ["releases.html"] $ do
         route idRoute
