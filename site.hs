@@ -92,5 +92,10 @@ main = hakyll $ do
 --------------------------------------------------------------------------------
 siteCtx :: Context String
 siteCtx = 
-    defaultContext <> (field "year" $ \i ->
-        unsafeCompiler $ formatTime defaultTimeLocale "%Y" <$> getZonedTime)
+    constField "author" "Rickard Nilsson"                               `mappend`
+    constField "email" "rickynils@gmail.com"                            `mappend`
+    constField "scmurl" "https://github.com/rickynils/scalacheck"       `mappend`
+    (field "year" $ \i ->
+        unsafeCompiler $
+            formatTime defaultTimeLocale "%Y" <$> getZonedTime)         `mappend`
+    defaultContext
