@@ -1,5 +1,5 @@
 ---
-title: Download ScalaCheck 1.13.4
+title: ScalaCheck 1.13.4
 published: Tue, 01 Nov 2016 14:15:44 UTC
 currentver: 1.13.4
 scalaVersions:
