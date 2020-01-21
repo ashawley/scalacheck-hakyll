@@ -9,7 +9,7 @@ The ScalaCheck [User Guide](https://github.com/typelevel/scalacheck/blob/master/
 
 ## API Documentation
 
-The API documentation for the latest ScalaCheck release is available both [online](./files/scalacheck_2.11-1.14.1-api/index.html) and packaged for [download](./download.html#api). You can find documentation for other ScalaCheck releases [here](./releases.html).
+The API documentation for the latest ScalaCheck release is available both [online](./files/scalacheck_2.11-1.14.3-api/index.html) and packaged for [download](./download.html#api). You can find documentation for other ScalaCheck releases [here](./releases.html).
 
 ## Presentations
 

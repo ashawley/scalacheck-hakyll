@@ -51,7 +51,7 @@ object StringSpecification extends Properties("String") {
 If you use [sbt](http://www.scala-sbt.org/) add the following dependency to your build file:
 
 ```scala
-libraryDependencies += "org.scalacheck" %% "scalacheck" % "1.14.1" % "test"
+libraryDependencies += "org.scalacheck" %% "scalacheck" % "1.14.3" % "test"
 ```
 
 Put your ScalaCheck properties in `src/test/scala`, then use the `test` task to check them:
@@ -70,7 +70,7 @@ As you can see, the second property was not quite right. ScalaCheck discovers th
 You can also use ScalaCheck standalone, since it has a built-in command line test runner. Compile and run like this:
 
 ```
-$ scalac -cp scalacheck_2.11-1.14.1.jar StringSpecification.scala
+$ scalac -cp scalacheck_2.11-1.14.3.jar StringSpecification.scala
 
-$ scala -cp .:scalacheck_2.11-1.14.1.jar StringSpecification
+$ scala -cp .:scalacheck_2.11-1.14.3.jar StringSpecification
 ```
