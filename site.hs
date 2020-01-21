@@ -7,7 +7,6 @@ import           Data.Time (defaultTimeLocale)
 import           Data.Time (getZonedTime)
 import           Hakyll
 
-
 --------------------------------------------------------------------------------
 main :: IO ()
 main = hakyll $ do
@@ -95,14 +94,18 @@ main = hakyll $ do
 
     match "templates/*" $ compile templateBodyCompiler
 
-
 --------------------------------------------------------------------------------
 siteCtx :: Context String
-siteCtx = 
+siteCtx =
     constField "author" "Rickard Nilsson"                               `mappend`
     constField "email" "rickynils@gmail.com"                            `mappend`
     constField "scmurl" "https://github.com/typelevel/scalacheck"       `mappend`
     (field "year" $ \i ->
         unsafeCompiler $
             formatTime defaultTimeLocale "%Y" <$> getZonedTime)         `mappend`
+    -- FIXME: It would be nice to DRY these up,
+    -- but they aren't in an HTML template,
+    -- so there's no way to inject these in Markdown...
+    constField "latest" "1.14.3"                                        `mappend`
+    constField "scala"  "2.12.0"                                        `mappend`
     defaultContext
