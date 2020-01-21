@@ -80,7 +80,10 @@ main = hakyll $ do
     create ["releases.html"] $ do
         route idRoute
         compile $ do
-            releases <- recentFirst =<< loadAll "download/*.markdown"
+            -- There is no topological sort, so settle for recentFirst
+            -- even though some earlier major version numbers had
+            -- minor releases after later major versions.
+	    releases <- recentFirst =<< loadAll "download/*.markdown"
             let releasesCtx =
                     listField "releases" siteCtx (return releases) `mappend`
                     constField "title" "All ScalaCheck Releases"   `mappend`

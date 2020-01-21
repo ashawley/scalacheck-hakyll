@@ -1,0 +1,22 @@
+---
+title: ScalaCheck 1.12.5
+published: Mon, 07 Sep 2015 09:29:57 UTC
+currentver: 1.12.5
+scalaVersions:
+  - "2.11"
+  - "2.10"
+---
+## sbt
+
+```scala
+libraryDependencies += "org.scalacheck" %% "scalacheck" % "1.12.5" % "test"
+```
+
+## Other resources
+
+- [ScalaCheck 1.12.5 release notes](https://github.com/rickynils/scalacheck/tree/1.12.5/RELEASE)
+- [All ScalaCheck releases](../releases.html)
+
+## License
+
+ScalaCheck is released under the [3-clause BSD license](https://github.com/rickynils/scalacheck/tree/1.12.5/LICENSE)

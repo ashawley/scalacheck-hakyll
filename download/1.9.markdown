@@ -1,0 +1,28 @@
+---
+title: ScalaCheck 1.9
+published: Tue, 10 May 2011 13:04:19 UTC
+currentver: 1.9
+scalaVersions:
+  - "2.11"
+  - "2.10"
+  - "2.9.3"
+  - "2.9.2"
+  - "2.9.1-1"
+  - "2.9.1"
+  - "2.9.0-1"
+  - "2.9.0"
+---
+## sbt
+
+```scala
+libraryDependencies += "org.scalacheck" %% "scalacheck" % "1.9" % "test"
+```
+
+## Other resources
+
+- [ScalaCheck 1.9 release notes](https://github.com/rickynils/scalacheck/tree/1.9/RELEASE)
+- [All ScalaCheck releases](../releases.html)
+
+## License
+
+ScalaCheck is released under the [3-clause BSD license](https://github.com/rickynils/scalacheck/tree/1.9/LICENSE)
