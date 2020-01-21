@@ -1,6 +1,6 @@
 ---
 title: ScalaCheck 1.13.0
-date: Wed, 03 Feb 2016 21:12:24 UTC
+published: Wed, 03 Feb 2016 21:12:24 UTC
 currentver: "1.13.0"
 scalaVersions:
   - "2.11"
