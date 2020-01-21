@@ -83,7 +83,7 @@ main = hakyll $ do
             -- There is no topological sort, so settle for recentFirst
             -- even though some earlier major version numbers had
             -- minor releases after later major versions.
-	    releases <- recentFirst =<< loadAll "download/*.markdown"
+            releases <- recentFirst =<< loadAll "download/*.markdown"
             let releasesCtx =
                     listField "releases" siteCtx (return releases) `mappend`
                     constField "title" "All ScalaCheck Releases"   `mappend`
