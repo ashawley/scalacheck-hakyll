@@ -36,7 +36,11 @@ a:hover {
     padding:0;
     list-style:none
 }
-.nav li {margin-right:15px;padding:0;display:inline}
+.nav li {
+    margin-right:15px;
+    padding:0;
+    display:inline
+}
 .nav {
     float:right
 }
