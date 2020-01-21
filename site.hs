@@ -87,7 +87,7 @@ main = hakyll $ do
                     siteCtx
             makeItem ""
                 >>= loadAndApplyTemplate "templates/releases.html" releasesCtx
-                >>= loadAndApplyTemplate "templates/default.html"  siteCtx
+                >>= loadAndApplyTemplate "templates/default.html"  releasesCtx
                 >>= relativizeUrls
 
     match "templates/*" $ compile templateBodyCompiler
