@@ -12,6 +12,8 @@ ScalaCheck is used by several prominent Scala projects, for example the [Scala c
 
 ## News
 
+- 2019-12-13: ScalaCheck 1.14.3 fixed a defect with number generators. This also produces artifacts for Scala.js 1.0.0-RC2 and 0.6.31. See the [change log](https://github.com/rickynils/scalacheck/tree/1.14.3/CHANGELOG.markdown).
+- 2019-09-25: ScalaCheck 1.14.2 fixed a major defect with Scala.js but no other changes from 1.14.1.
 - 2019-09-18: ScalaCheck 1.14.1 released! This is the first release since the ScalaCheck repository was moved to the [Typelevel](https://typelevel.org/) organisation. See the [release notes](https://github.com/rickynils/scalacheck/releases/tag/1.14.1).
 - 2018-04-22: [ScalaCheck 1.14.0](download/1.14.0.html)! This release introduces support for deterministic testing. See [release notes](https://github.com/rickynils/scalacheck/tree/1.14.0/RELEASE.markdown) and [change log](https://github.com/rickynils/scalacheck/tree/1.14.0/CHANGELOG.markdown).
 - 2016-11-01: [ScalaCheck 1.13.4](download/1.13.4.html) and [ScalaCheck 1.12.6](download/1.12.6.html) released! These releases fix a [deadlock problem](https://github.com/rickynils/scalacheck/issues/290) with Scala 2.12.0. Also, as a problem was discovered with the previously released ScalaCheck 1.12.5 build, it is recommended that you upgrade to 1.12.6 or 1.13.4 even if you’re not using Scala 2.12.
