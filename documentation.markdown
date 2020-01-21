@@ -5,7 +5,7 @@ title: ScalaCheck Documentation
 # ScalaCheck Documentation
 
 ## User Guide
-The ScalaCheck [User Guide](https://github.com/rickynils/scalacheck/blob/master/doc/UserGuide.md) is developed continuously, and should reflect the latest release of ScalaCheck reasonably well. If you find any inconsistencies or missing parts, please [report](https://github.com/rickynils/scalacheck/issues) it (or submit a [pull request](https://github.com/rickynils/scalacheck/pulls)!).
+The ScalaCheck [User Guide](https://github.com/typelevel/scalacheck/blob/master/doc/UserGuide.md) is developed continuously, and should reflect the latest release of ScalaCheck reasonably well. If you find any inconsistencies or missing parts, please [report](https://github.com/typelevel/scalacheck/issues) it (or submit a [pull request](https://github.com/typelevel/scalacheck/pulls)!).
 
 ## API Documentation
 
@@ -25,7 +25,7 @@ The API documentation for the latest ScalaCheck release is available both [onlin
 - [\@scalacheck on Twitter](https://twitter.com/scalacheck)
 - [The ScalaCheck Mailing List](https://groups.google.com/forum/#!forum/scalacheck)
 - [ScalaCheck on StackOverflow](https://stackoverflow.com/questions/tagged/scalacheck)
-- [ScalaCheck Bug Reports](https://github.com/rickynils/scalacheck/issues)
+- [ScalaCheck Bug Reports](https://github.com/typelevel/scalacheck/issues)
 
 ## ScalaCheck: The Definitive Guide
 

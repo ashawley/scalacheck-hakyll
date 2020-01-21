@@ -101,7 +101,7 @@ siteCtx :: Context String
 siteCtx = 
     constField "author" "Rickard Nilsson"                               `mappend`
     constField "email" "rickynils@gmail.com"                            `mappend`
-    constField "scmurl" "https://github.com/rickynils/scalacheck"       `mappend`
+    constField "scmurl" "https://github.com/typelevel/scalacheck"       `mappend`
     (field "year" $ \i ->
         unsafeCompiler $
             formatTime defaultTimeLocale "%Y" <$> getZonedTime)         `mappend`

@@ -16,10 +16,10 @@ libraryDependencies += "org.scalacheck" %% "scalacheck" % "1.14.0" % "test"
 
 ## Other resources
 
-- [ScalaCheck 1.14.0 release notes](https://github.com/rickynils/scalacheck/tree/1.14.0/RELEASE.markdown)
+- [ScalaCheck 1.14.0 release notes](https://github.com/typelevel/scalacheck/tree/1.14.0/RELEASE.markdown)
 - [All ScalaCheck releases](../releases.html)
 
 
 ## License
 
-ScalaCheck is released under the [3-clause BSD license](https://github.com/rickynils/scalacheck/tree/1.14.0/LICENSE)
+ScalaCheck is released under the [3-clause BSD license](https://github.com/typelevel/scalacheck/tree/1.14.0/LICENSE)
