@@ -9,7 +9,7 @@ ScalaCheck build artifacts are no longer published on this site. You can find bu
 The easiest way to retrieve ScalaCheck is through sbt:
 
 ```scala
-libraryDependencies += "org.scalacheck" %% "scalacheck" % "1.14.1" % "test"
+libraryDependencies += "org.scalacheck" %% "scalacheck" % "1.14.3" % "test"
 ```
 
 There are still [older releases](releases.html) available on this site.
