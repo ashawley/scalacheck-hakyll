@@ -1,5 +1,5 @@
 ---
-title: Home
+title: ScalaCheck
 ---
 
 # ScalaCheck: Property-based testing for Scala
